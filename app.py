@@ -9,12 +9,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 
 st.set_page_config(page_title="Lung Cancer Classification", layout="wide", initial_sidebar_state="expanded")
 
-for dir_name in ["models", "model", "saved_models"]:
-    if os.path.isdir(dir_name):
-        MODEL_DIRECTORY = dir_name
-        break
-else:
-    MODEL_DIRECTORY = "models"
+MODEL_DIRECTORY = "models"
 TARGET_COLUMN = "LUNG_CANCER"
 
 FEATURE_COLUMNS = ["GENDER", "AGE", "SMOKING", "YELLOW_FINGERS", "ANXIETY", "PEER_PRESSURE", "CHRONIC DISEASE", "FATIGUE", "ALLERGY", "WHEEZING", "ALCOHOL CONSUMING", "COUGHING", "SHORTNESS OF BREATH", "SWALLOWING DIFFICULTY", "CHEST PAIN"]

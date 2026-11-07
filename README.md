@@ -122,7 +122,7 @@ project-folder/
 ├── requirements.txt
 ├── README.md
 ├── test_data.csv
-├── saved_models/
+├── models/
 │   ├── logistic_regression.pkl
 │   ├── decision_tree.pkl
 │   ├── knn.pkl
@@ -165,4 +165,3 @@ streamlit run app.py
 5. View the prediction results and model evaluation metrics.
 6. Check the confusion matrix and classification report.
 7. Download the prediction results as a CSV file.
-
